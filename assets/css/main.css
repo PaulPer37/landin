@@ -1041,20 +1041,30 @@ p + p{
   background-color: rgb(49 84 205 / var(--tw-bg-opacity));
 }
 
+#home {
+  background-color: #E1B0AC !important; /* Rosa caverna */
+  background-image: none !important;    /* Elimina el gradiente si lo deseas */
+  color: #213F99 !important;            /* Azul marino para textos */
+}
+#home h1, #home h2, #home h3, #home h4, #home h5, #home h6, 
+#home p, #home a, #home span, #home strong {
+  color: #213F99 !important;            /* Azul marino para todos los textos */
+}
+
 #home{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: radial-gradient(
     circle at top right,
-    rgba(255, 193, 227, 0.2) 0%,
-    rgba(255, 193, 227, 0.2) 28%,
-    rgba(255, 193, 227, 0.15) 28%,
-    rgba(255, 193, 227, 0.15) 45%,
-    rgba(255, 193, 227, 0.1) 45%,
-    rgba(255, 193, 227, 0.1) 63%,
-    rgba(255, 193, 227, 0.05) 63%,
-    rgba(255, 193, 227, 0.05) 100%
+    rgba(225, 176, 172, 0.2) 0%,
+    rgba(225, 176, 172, 0.2) 28%,
+    rgba(225, 176, 172, 0.15) 28%,
+    rgba(225, 176, 172, 0.15) 45%,
+    rgba(225, 176, 172, 0.1) 45%,
+    rgba(225, 176, 172, 0.1) 63%,
+    rgba(225, 176, 172, 0.05) 63%,
+    rgba(225, 176, 172, 0.05) 100%
   );
 }
 
@@ -1771,7 +1781,7 @@ p + p{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 193 227 / var(--tw-bg-opacity));
+  background-color: rgb(225 176 172 / var(--tw-bg-opacity));
 }
 
 .bg-primary-color{

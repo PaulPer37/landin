@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FFC1E3",
+          DEFAULT: "#E1B0AC", // Rosa caverna
           "light-1": "#FFE4F2",
           "light-10": "#FFD1EA",
           "light-11": "#FFB8DE",
