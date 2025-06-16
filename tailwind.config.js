@@ -3,46 +3,16 @@ module.exports = {
   content: ["./index.html"],
   darkMode: ["selector", "[data-web-theme=dark]"],
   theme: {
-    container: {
-      center: true,
-      padding: "1.25rem",
-    },
     extend: {
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-      },
       colors: {
         primary: {
-          DEFAULT: "#3d63dd",
-          color: "#fff",
-          light: {
-            1: "#fdfdfe",
-            2: "#f7f9ff",
-            3: "#edf2fe",
-            4: "#dfeaff",
-            5: "#d0dfff",
-            6: "#bdd1ff",
-            7: "#a6bff9",
-            8: "#87a5ef",
-            9: "#3d63dd",
-            10: "#3657c3",
-            11: "#395bc7",
-            12: "#1d2e5c",
-          },
-          dark: {
-            1: "#1d222e",
-            2: "#1e2534",
-            3: "#233157",
-            4: "#273a6f",
-            5: "#2e4480",
-            6: "#364d8e",
-            7: "#3e58a0",
-            8: "#4664b8",
-            9: "#3d63dd",
-            10: "#3154cd",
-            11: "#94b5ff",
-            12: "#d5e2ff",
-          },
+          DEFAULT: "#E1B0AC", // Rosa caverna
+          "light-1": "#FFE4F2",
+          "light-10": "#FFD1EA",
+          "light-11": "#FFB8DE",
+          "dark-1": "#FFB8DE",
+          "dark-10": "#FFA3D2",
+          "dark-11": "#FF8FC6",
         },
         body: {
           light: {

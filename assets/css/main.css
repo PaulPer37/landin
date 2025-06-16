@@ -115,8 +115,14 @@ Reset links to optimize for opt-in styling instead of opt-out.
 */
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  --tw-text-opacity: 1;
+  color: rgb(255 193 227 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 160 210 / var(--tw-text-opacity));
 }
 
 /*
@@ -537,13 +543,13 @@ a{
   text-wrap: balance;
   overflow-wrap: break-word;
   --tw-text-opacity: 1;
-  color: rgb(57 91 199 / var(--tw-text-opacity));
+  color: rgb(255 193 227 / var(--tw-text-opacity));
   text-decoration-line: none;
 }
 
 a:hover{
   --tw-text-opacity: 1;
-  color: rgb(54 87 195 / var(--tw-text-opacity));
+  color: rgb(255 160 210 / var(--tw-text-opacity));
 }
 
 a:where([data-web-theme=dark], [data-web-theme=dark] *){
@@ -953,7 +959,7 @@ p + p{
 }
 
 .ic-navbar.sticky .ic-navbar-logo #NavbarBrandIcon{
-  fill: #3d63dd;
+  fill: #ffc1e3;
 }
 
 .ic-navbar.sticky .ic-navbar-toggler{
@@ -1020,12 +1026,12 @@ p + p{
 
 .ic-navbar.sticky .btn-navbar{
   --tw-bg-opacity: 1;
-  background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+  background-color: rgb(255 193 227 / var(--tw-bg-opacity));
 }
 
 .ic-navbar.sticky .btn-navbar:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(54 87 195 / var(--tw-bg-opacity));
+  background-color: rgb(255 160 210 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1035,21 +1041,31 @@ p + p{
   background-color: rgb(49 84 205 / var(--tw-bg-opacity));
 }
 
+#home {
+  background-color: #E1B0AC !important; /* Rosa caverna */
+  background-image: none !important;    /* Elimina el gradiente si lo deseas */
+  color: #213F99 !important;            /* Azul marino para textos */
+}
+#home h1, #home h2, #home h3, #home h4, #home h5, #home h6, 
+#home p, #home a, #home span, #home strong {
+  color: #213F99 !important;            /* Azul marino para todos los textos */
+}
+
 #home{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: radial-gradient(
-      circle at top right,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 28%,
-      rgba(255, 255, 255, 0.075) 28%,
-      rgba(255, 255, 255, 0.075) 45%,
-      rgba(255, 255, 255, 0.05) 45%,
-      rgba(255, 255, 255, 0.05) 63%,
-      rgba(255, 255, 255, 0.025) 63%,
-      rgba(255, 255, 255, 0.025) 100%
-    );
+    circle at top right,
+    rgba(225, 176, 172, 0.2) 0%,
+    rgba(225, 176, 172, 0.2) 28%,
+    rgba(225, 176, 172, 0.15) 28%,
+    rgba(225, 176, 172, 0.15) 45%,
+    rgba(225, 176, 172, 0.1) 45%,
+    rgba(225, 176, 172, 0.1) 63%,
+    rgba(225, 176, 172, 0.05) 63%,
+    rgba(225, 176, 172, 0.05) 100%
+  );
 }
 
 .section-area{
@@ -1765,7 +1781,7 @@ p + p{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+  background-color: rgb(225 176 172 / var(--tw-bg-opacity));
 }
 
 .bg-primary-color{
@@ -2076,7 +2092,7 @@ p + p{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(61 99 221 / var(--tw-text-opacity));
+  color: rgb(255 193 227 / var(--tw-text-opacity));
 }
 
 .text-primary-color{
@@ -2181,7 +2197,7 @@ p + p{
 
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+  background-color: rgb(255 193 227 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-color:hover{
@@ -2210,7 +2226,7 @@ p + p{
 
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
-  color: rgb(61 99 221 / var(--tw-text-opacity));
+  color: rgb(255 193 227 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary-color:hover{
@@ -2257,7 +2273,7 @@ p + p{
 
 .focus\:bg-primary:focus{
   --tw-bg-opacity: 1;
-  background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+  background-color: rgb(255 193 227 / var(--tw-bg-opacity));
 }
 
 .focus\:bg-primary-color:focus{
@@ -2272,7 +2288,7 @@ p + p{
 
 .focus\:text-primary:focus{
   --tw-text-opacity: 1;
-  color: rgb(61 99 221 / var(--tw-text-opacity));
+  color: rgb(255 193 227 / var(--tw-text-opacity));
 }
 
 .focus\:text-primary-color:focus{
@@ -2320,7 +2336,7 @@ p + p{
 
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
-  color: rgb(61 99 221 / var(--tw-text-opacity));
+  color: rgb(255 193 227 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100{
